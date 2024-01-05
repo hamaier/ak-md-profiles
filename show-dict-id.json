@@ -3,12 +3,13 @@
   "namespace": "gov.fws.profile",
   "title": "Test Data Dictionary Profile",
   "description": "Test of data dictionary profile to allow editing of the dictionaryId.",
-  "version": "0.0.0-alpha.1",
+  "version": "0.0.0-alpha.2",
   "components": {
     "dictionary": {
       "main": {
         "basicInformation": {
-          "recordId": true
+          "recordId": true,
+          "subject": false
         },
         "recommendedUse": false,
         "locale": false
