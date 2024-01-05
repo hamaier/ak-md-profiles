@@ -1,0 +1,54 @@
+{
+  "identifier": "test-show-dict-id",
+  "namespace": "gov.fws.profile",
+  "title": "Test Data Dictionary Profile",
+  "description": "Test of data dictionary profile to allow editing of the dictionaryId.",
+  "version": "0.0.0-alpha.1",
+  "components": {
+    "dictionary": {
+      "main": {
+        "basicInformation": {
+          "recordId": true
+        },
+        "recommendedUse": false,
+        "locale": false
+      },
+      "entity":{
+        "identifier": false,
+        "alias": false,
+        "attribute": {
+          "attributeReference": false
+        },
+        "entityReference": false
+      },
+      "domain": {
+        "information": {
+          "identifier": false
+        },
+        "domainItem": {
+          "reference": false
+        },
+        "domainReference": false
+      }
+    }
+  },
+  "nav": {
+    "dictionary": [
+      {
+        "title": "Main",
+        "target": "dictionary.show.edit.index",
+        "tip": "Basic information about the data dictionary."
+      },
+      {
+        "title": "Entities",
+        "target": "dictionary.show.edit.entity",
+        "tip": "Information about entities (tables) and attributes (columns or fields)."
+      },
+      {
+        "title": "Domains",
+        "target": "dictionary.show.edit.domain",
+        "tip": "Information about defined value lists."
+      }
+    ]
+  }
+}
